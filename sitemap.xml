@@ -18,7 +18,17 @@
   </url>
   
   <url>
+    <loc>http://example.org/post/git%E5%85%A5%E9%97%A8%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</loc>
+    <lastmod>2019-11-17T19:01:56+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/posts/git%E5%85%A5%E9%97%A8%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</loc>
+    <lastmod>2019-11-17T19:01:56+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/</loc>
     <lastmod>2019-11-17T19:01:56+08:00</lastmod>
   </url>
   

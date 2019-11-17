@@ -6,21 +6,10 @@
     <description>Recent content in Posts on fanison的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 17 Nov 2019 20:39:12 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 17 Nov 2019 19:01:56 +0800</lastBuildDate>
     
 	<atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Git入门———远程仓库</title>
-      <link>http://example.org/post/git%E5%85%A5%E9%97%A8%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</link>
-      <pubDate>Sun, 17 Nov 2019 20:39:12 +0800</pubDate>
-      
-      <guid>http://example.org/post/git%E5%85%A5%E9%97%A8%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
-      <description>###1. 新建仓库 Repository name：填写仓库名称
-###2. 上传代码  git remote add origin git@xxxxxxx 在本地添加远程仓库地址 git push -u origin master 推送本地master到远程origin的master分支  ###3. 下载代码 git clone git@?/xxx.git 下载代码 git clone https://github.com/?/xxx.git 注： 下载别人代码使用https地址 下载自己代码https、ssh均可  ###4. 上传到两个远程仓库  第二个仓库上传时使用如下代码： git remote add origin2 git@xxx.git git push -u origin2 master  ###5. git高级操作 ######使用bash alias简化命令
-touch ~/.bashrc echo &#39;alias ga=&amp;quot;git add&amp;quot;&#39;&amp;gt;&amp;gt; ~/.bashrc echo &#39;alias gc=&amp;quot;git commit -v&amp;quot;&#39;&amp;gt;&amp;gt; ~/.bashrc echo &#39;alias gl=&amp;quot;git pull&amp;quot;&#39;&amp;gt;&amp;gt; ~/.bashrc echo &#39;alias gp=&amp;quot;git push&amp;quot;&#39;&amp;gt;&amp;gt; ~/.</description>
-    </item>
     
     <item>
       <title>Git入门本地仓库</title>
