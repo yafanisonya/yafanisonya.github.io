@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>fanison的博客  | Hugo搭建博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.59.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Hugo搭建博客" />
+<meta property="og:description" content="hugo官网搭建过程
+1. 安装hugo 2. Create a New Site hugo new site yafanisonya.io-creator  3. Add a Theme  cd yafanisonya.io-creator/ git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  4. Add Some Content  hugo new posts/my-first-post.md  将draft值改为false，否则为草稿状态
+5. Start the Hugo server  hugo server -D  6. Customize the Theme 7. Build static pages  hugo -D  8. 本地推送至github 在/d/github/yafanisonya.io-creator中创建.gitignore文件，将/public写入，使得public自成仓库" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" />
+<meta property="article:published_time" content="2019-11-17T21:04:49+08:00" />
+<meta property="article:modified_time" content="2019-11-17T21:04:49+08:00" />
+<meta itemprop="name" content="Hugo搭建博客">
+<meta itemprop="description" content="hugo官网搭建过程
+1. 安装hugo 2. Create a New Site hugo new site yafanisonya.io-creator  3. Add a Theme  cd yafanisonya.io-creator/ git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  4. Add Some Content  hugo new posts/my-first-post.md  将draft值改为false，否则为草稿状态
+5. Start the Hugo server  hugo server -D  6. Customize the Theme 7. Build static pages  hugo -D  8. 本地推送至github 在/d/github/yafanisonya.io-creator中创建.gitignore文件，将/public写入，使得public自成仓库">
+
+
+<meta itemprop="datePublished" content="2019-11-17T21:04:49&#43;08:00" />
+<meta itemprop="dateModified" content="2019-11-17T21:04:49&#43;08:00" />
+<meta itemprop="wordCount" content="103">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo搭建博客"/>
+<meta name="twitter:description" content="hugo官网搭建过程
+1. 安装hugo 2. Create a New Site hugo new site yafanisonya.io-creator  3. Add a Theme  cd yafanisonya.io-creator/ git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &quot;ananke&quot;&#39; &gt;&gt; config.toml  4. Add Some Content  hugo new posts/my-first-post.md  将draft值改为false，否则为草稿状态
+5. Start the Hugo server  hugo server -D  6. Customize the Theme 7. Build static pages  hugo -D  8. 本地推送至github 在/d/github/yafanisonya.io-creator中创建.gitignore文件，将/public写入，使得public自成仓库"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      fanison的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Hugo搭建博客</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-11-17T21:04:49&#43;08:00">November 17, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-c956bde8ee2c8e16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<a href="https://gohugo.io/getting-started/quick-start/">hugo官网搭建过程</a></p>
+
+<h4 id="1-安装hugo">1. 安装hugo</h4>
+
+<h4 id="2-create-a-new-site">2. Create a New Site</h4>
+
+<pre><code>hugo new site yafanisonya.io-creator
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-3ca7d718d977926e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<h4 id="3-add-a-theme">3. Add a Theme</h4>
+
+<pre><code>  cd yafanisonya.io-creator/
+  git init
+  git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+  echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-501039de7a41cacc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<h4 id="4-add-some-content">4.  Add Some Content</h4>
+
+<pre><code>  hugo new posts/my-first-post.md
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-836cc24b30c51f8c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<img src="https://upload-images.jianshu.io/upload_images/16155751-0d62a31b71b132eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<code>将draft值改为false，否则为草稿状态</code></p>
+
+<h4 id="5-start-the-hugo-server">5.  Start the Hugo server</h4>
+
+<pre><code> hugo server -D
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-6883ffdca42f3789.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<img src="https://upload-images.jianshu.io/upload_images/16155751-aca2a580277c186e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<h4 id="6-customize-the-theme">6. Customize the Theme</h4>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-ba0111ada6b0f6fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<h4 id="7-build-static-pages">7.  Build static pages</h4>
+
+<pre><code>  hugo -D
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-fef3357e447aa567.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<h4 id="8-本地推送至github">8. 本地推送至github</h4>
+
+<p><code>在/d/github/yafanisonya.io-creator中创建.gitignore文件，将/public写入，使得public自成仓库</code></p>
+
+<pre><code>  cd public/
+  git init
+  git add .
+  git commit -v
+</code></pre>
+
+<p><code>在github新建仓库，仓库名为 用户名.github.io</code>
+<img src="https://upload-images.jianshu.io/upload_images/16155751-de1bf08a19407895.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<pre><code>  git remote add origin git@github.com:yafanisonya/yafanisonya.github.io.git
+  git push -u origin master
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-6bef117c3ac509bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<img src="https://upload-images.jianshu.io/upload_images/16155751-254af368e24f1c7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<code>在yafanisonya.github.io仓库中设置GitHub Pages--&gt;Source--&gt;master</code>
+<img src="https://upload-images.jianshu.io/upload_images/16155751-b783f0c73e4fcf59.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<h2 id="最终效果">最终效果：</h2>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-83c3b91495b7e02d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<h4 id="hugo更新博客方法">hugo更新博客方法：</h4>
+
+<h5 id="①-新建博客">①：新建博客</h5>
+
+<pre><code>  hugo new posts/my-first-post.md
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-0581c5fd735f537d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<code>然后编辑博客内容</code></p>
+
+<h5 id="②-hugo">②：hugo</h5>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-73a2cec915ac136a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<h5 id="③-推送">③：推送</h5>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-96be171c5cfc1d0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<pre><code>    cd public/
+    git add .
+    git commit -v
+    git push
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-616eb245c25e2e94.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-16619dc8462ef32e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="更新成功" /></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy; 2019 fanison的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
