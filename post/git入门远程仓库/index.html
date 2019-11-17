@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>fanison的博客  | Git入门———远程仓库</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.59.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Git入门———远程仓库" />
+<meta property="og:description" content="###1. 新建仓库 Repository name：填写仓库名称
+###2. 上传代码  git remote add origin git@xxxxxxx 在本地添加远程仓库地址 git push -u origin master 推送本地master到远程origin的master分支  ###3. 下载代码 git clone git@?/xxx.git 下载代码 git clone https://github.com/?/xxx.git 注： 下载别人代码使用https地址 下载自己代码https、ssh均可  ###4. 上传到两个远程仓库  第二个仓库上传时使用如下代码： git remote add origin2 git@xxx.git git push -u origin2 master  ###5. git高级操作 ######使用bash alias简化命令
+touch ~/.bashrc echo &#39;alias ga=&quot;git add&quot;&#39;&gt;&gt; ~/.bashrc echo &#39;alias gc=&quot;git commit -v&quot;&#39;&gt;&gt; ~/.bashrc echo &#39;alias gl=&quot;git pull&quot;&#39;&gt;&gt; ~/.bashrc echo &#39;alias gp=&quot;git push&quot;&#39;&gt;&gt; ~/." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/post/git%E5%85%A5%E9%97%A8%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" />
+<meta property="article:published_time" content="2019-11-17T20:39:12+08:00" />
+<meta property="article:modified_time" content="2019-11-17T20:39:12+08:00" />
+<meta itemprop="name" content="Git入门———远程仓库">
+<meta itemprop="description" content="###1. 新建仓库 Repository name：填写仓库名称
+###2. 上传代码  git remote add origin git@xxxxxxx 在本地添加远程仓库地址 git push -u origin master 推送本地master到远程origin的master分支  ###3. 下载代码 git clone git@?/xxx.git 下载代码 git clone https://github.com/?/xxx.git 注： 下载别人代码使用https地址 下载自己代码https、ssh均可  ###4. 上传到两个远程仓库  第二个仓库上传时使用如下代码： git remote add origin2 git@xxx.git git push -u origin2 master  ###5. git高级操作 ######使用bash alias简化命令
+touch ~/.bashrc echo &#39;alias ga=&quot;git add&quot;&#39;&gt;&gt; ~/.bashrc echo &#39;alias gc=&quot;git commit -v&quot;&#39;&gt;&gt; ~/.bashrc echo &#39;alias gl=&quot;git pull&quot;&#39;&gt;&gt; ~/.bashrc echo &#39;alias gp=&quot;git push&quot;&#39;&gt;&gt; ~/.">
+
+
+<meta itemprop="datePublished" content="2019-11-17T20:39:12&#43;08:00" />
+<meta itemprop="dateModified" content="2019-11-17T20:39:12&#43;08:00" />
+<meta itemprop="wordCount" content="111">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git入门———远程仓库"/>
+<meta name="twitter:description" content="###1. 新建仓库 Repository name：填写仓库名称
+###2. 上传代码  git remote add origin git@xxxxxxx 在本地添加远程仓库地址 git push -u origin master 推送本地master到远程origin的master分支  ###3. 下载代码 git clone git@?/xxx.git 下载代码 git clone https://github.com/?/xxx.git 注： 下载别人代码使用https地址 下载自己代码https、ssh均可  ###4. 上传到两个远程仓库  第二个仓库上传时使用如下代码： git remote add origin2 git@xxx.git git push -u origin2 master  ###5. git高级操作 ######使用bash alias简化命令
+touch ~/.bashrc echo &#39;alias ga=&quot;git add&quot;&#39;&gt;&gt; ~/.bashrc echo &#39;alias gc=&quot;git commit -v&quot;&#39;&gt;&gt; ~/.bashrc echo &#39;alias gl=&quot;git pull&quot;&#39;&gt;&gt; ~/.bashrc echo &#39;alias gp=&quot;git push&quot;&#39;&gt;&gt; ~/."/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      fanison的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Git入门———远程仓库</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-11-17T20:39:12&#43;08:00">November 17, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>###1. 新建仓库
+<img src="https://upload-images.jianshu.io/upload_images/16155751-033320f7150e94fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<code>Repository name：填写仓库名称</code></p>
+
+<p>###2. 上传代码
+<img src="https://upload-images.jianshu.io/upload_images/16155751-7a9ffd6205261278.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<img src="https://upload-images.jianshu.io/upload_images/16155751-2749894abc0f8785.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<img src="https://upload-images.jianshu.io/upload_images/16155751-f802919cc1432115.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<pre><code>  git remote add origin git@xxxxxxx   在本地添加远程仓库地址
+  git push -u origin master           推送本地master到远程origin的master分支
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-2c24c7737cdac071.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="上传完毕" />
+###3. 下载代码
+<img src="https://upload-images.jianshu.io/upload_images/16155751-45989ea943be5484.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<img src="https://upload-images.jianshu.io/upload_images/16155751-49f6c11074b13565.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<pre><code>git clone git@?/xxx.git      下载代码
+git clone https://github.com/?/xxx.git
+注： 下载别人代码使用https地址
+     下载自己代码https、ssh均可
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-f11a69e5705e3432.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+###4. 上传到两个远程仓库
+<img src="https://upload-images.jianshu.io/upload_images/16155751-1915736f5824bbb3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<pre><code>    第二个仓库上传时使用如下代码：
+        git remote add origin2 git@xxx.git
+        git push -u origin2 master
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-e07756988dd15ace.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="效果图" /></p>
+
+<p>###5. git高级操作
+######使用bash alias简化命令</p>
+
+<pre><code>touch ~/.bashrc
+echo 'alias ga=&quot;git add&quot;'&gt;&gt; ~/.bashrc
+echo 'alias gc=&quot;git commit -v&quot;'&gt;&gt; ~/.bashrc
+echo 'alias gl=&quot;git pull&quot;'&gt;&gt; ~/.bashrc
+echo 'alias gp=&quot;git push&quot;'&gt;&gt; ~/.bashrc
+echo 'alias gco=&quot;git checkout&quot;'&gt;&gt; ~/.bashrc
+echo 'alias gst=&quot;git status -sb&quot;'&gt;&gt; ~/.bashrc
+echo 'alias glog=&quot;git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit -- | less&quot;' &gt;&gt; ~/.bashrc
+</code></pre>
+
+<p><code>ga、gc、gl、gp、gco、gst、glog</code></p>
+
+<pre><code>git rebase -i XXX       美化历史命令
+git stash               临时隐藏代码
+git stash pop           显示临时隐藏代码
+</code></pre>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy; 2019 fanison的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
