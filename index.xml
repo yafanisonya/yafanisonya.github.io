@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fanison的博客</title>
-    <link>http://example.org/</link>
+    <link>http://fanison.info/</link>
     <description>Recent content on fanison的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <lastBuildDate>Sun, 17 Nov 2019 21:04:49 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://fanison.info/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo搭建博客</title>
-      <link>http://example.org/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>http://fanison.info/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sun, 17 Nov 2019 21:04:49 +0800</pubDate>
       
-      <guid>http://example.org/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>http://fanison.info/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>hugo官网搭建过程
 1. 安装hugo 2. Create a New Site hugo new site yafanisonya.io-creator  3. Add a Theme  cd yafanisonya.io-creator/ git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml  4. Add Some Content  hugo new posts/my-first-post.md  将draft值改为false，否则为草稿状态
 5. Start the Hugo server  hugo server -D  6. Customize the Theme 7. Build static pages  hugo -D  8. 本地推送至github 在/d/github/yafanisonya.io-creator中创建.gitignore文件，将/public写入，使得public自成仓库</description>
@@ -24,20 +24,20 @@
     
     <item>
       <title>Git入门———远程仓库</title>
-      <link>http://example.org/posts/git%E5%85%A5%E9%97%A8%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</link>
+      <link>http://fanison.info/posts/git%E5%85%A5%E9%97%A8%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</link>
       <pubDate>Sun, 17 Nov 2019 20:39:12 +0800</pubDate>
       
-      <guid>http://example.org/posts/git%E5%85%A5%E9%97%A8%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
+      <guid>http://fanison.info/posts/git%E5%85%A5%E9%97%A8%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</guid>
       <description>1. 新建仓库 Repository name：填写仓库名称
 2. 上传代码  git remote add origin git@xxxxxxx 在本地添加远程仓库地址 git push -u origin master 推送本地master到远程origin的master分支  3. 下载代码 git clone git@?/xxx.git 下载代码 git clone https://github.com/?/xxx.git 注： 下载别人代码使用https地址 下载自己代码https、ssh均可  4. 上传到两个远程仓库  第二个仓库上传时使用如下代码： git remote add origin2 git@xxx.git git push -u origin2 master  5. git高级操作 使用bash alias简化命令 touch ~/.bashrc echo &#39;alias ga=&amp;quot;git add&amp;quot;&#39;&amp;gt;&amp;gt; ~/.bashrc echo &#39;alias gc=&amp;quot;git commit -v&amp;quot;&#39;&amp;gt;&amp;gt; ~/.bashrc echo &#39;alias gl=&amp;quot;git pull&amp;quot;&#39;&amp;gt;&amp;gt; ~/.</description>
     </item>
     
     <item>
       <title>Git入门本地仓库</title>
-      <link>http://example.org/posts/git%E5%85%A5%E9%97%A8%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</link>
+      <link>http://fanison.info/posts/git%E5%85%A5%E9%97%A8%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</link>
       <pubDate>Sun, 17 Nov 2019 19:01:56 +0800</pubDate>
       
-      <guid>http://example.org/posts/git%E5%85%A5%E9%97%A8%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</guid>
+      <guid>http://fanison.info/posts/git%E5%85%A5%E9%97%A8%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</guid>
       <description>1. 配置 git git 六行配置  git config --global user.name 你的英文名 git config --global user.email 你的邮箱 git config --global push.default simple git config --global core.quotepath false git config --global core.editor &amp;quot;code --wait&amp;quot; git config --global core.autocrlf input  2. 创建目录  git init 创建.git 目录 git status -sb 查看代码在缓存区状态（？未添加 ， A 已添加） -sb 显示总结和分支  3. 添加文件 git add 将文件添加到暂存区  4. 提交代码  git commit -m &amp;quot;注释&amp;quot; 将暂存区内容正式提交到本地仓库 git commit -v 显示差异信息和更多有意义的信息  5.</description>
     </item>
     

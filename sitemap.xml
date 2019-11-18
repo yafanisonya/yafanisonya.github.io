@@ -3,36 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://fanison.info/</loc>
     <lastmod>2019-11-17T21:04:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>http://fanison.info/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2019-11-17T21:04:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>http://fanison.info/posts/</loc>
     <lastmod>2019-11-17T21:04:49+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/git%E5%85%A5%E9%97%A8%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</loc>
+    <loc>http://fanison.info/posts/git%E5%85%A5%E9%97%A8%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</loc>
     <lastmod>2019-11-17T20:39:12+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/git%E5%85%A5%E9%97%A8%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</loc>
+    <loc>http://fanison.info/posts/git%E5%85%A5%E9%97%A8%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</loc>
     <lastmod>2019-11-17T19:01:56+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://fanison.info/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://fanison.info/tags/</loc>
   </url>
   
 </urlset>
