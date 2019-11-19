@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://fanison.info/" />
 
-<meta property="og:updated_time" content="2019-11-17T21:04:49+08:00" />
+<meta property="og:updated_time" content="2019-11-19T20:24:05+08:00" />
 <meta itemprop="name" content="fanison的博客">
 <meta itemprop="description" content="">
 
@@ -123,6 +123,33 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="http://fanison.info/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="color-inherit dim link">
+            HTML入门笔记1
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          1. HTML 起手式 新建demo--&gt;新建html--&gt;&lt;!DOCTYPE html&gt; 2. 全局属性  style 元素CSS样式声明
+&lt;style&gt; style{display:block;} #xxx{ color:green; } &lt;/style&gt;    使得style可见，前提需将style放入body中 - class 类名列表
+ &lt;style&gt; [class=&quot;hder&quot;]{ color:red; } .hder{ color:green; } &lt;/style&gt; &lt;header class=&quot;hder&quot;&gt;这是我的html笔记&lt;/header&gt;  如果class有多个属性，则[class=&quot;属性&quot;]需写入全部属性才可匹配对应的class，使用 .属性方式写入class的某一个属性即可匹配class - contenteditable 元素是否可被用户编辑  hidden 隐藏元素  id 唯一标识符   不到万不得已不使用id，id不报错
+ tabindex 整数属性，指示元素是否可以获取输入焦点（可聚焦），是否应该参与顺序键盘导航 正值通过顺序键盘导航进行聚焦和访问,0 表示最后访问，-1表示不可通过键盘导航到达 title 表示与其所属元素相关信息的文本   3.章节标签 | 章节 | -| | &lt;section&gt; 表示文档中的一个区域（或节），比如，内容中的一个专题组，一般来说会有包含一个标题（heading）。一般通过是否包含一个标题 (- element) 作为子节点 来 辨识每一个。&rdquo;) | 定义文档中的一个章节 | | &lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt; | 六层文档标题，&lt;h1&gt; 最大,&lt;h6&gt; 最小 | | &lt;article&gt; | 可以独立于内容其余部分的完整独立内容块 | | &lt;p&gt; | 定义一个段落 | | &lt;header&gt;| 定义页面或章节的头部 | | &lt;footer&gt; | 定义页面或章节的尾部 | | &lt;main&gt; | 定义文档中主要或重要的内容。 | | &lt;aside&gt; | 定义和页面内容关联度较低的内容 | | &lt;div&gt; 是一个通用型的流内容容器，它在语义上不代表任何特定类型的内容，它可以被用来对其它元素进行分组，一般用于样式化相关的需求（使用 class 或 id 特性) 或者对具有相同特性的一组元素进行分组 (比如 lang)，它应该在没有任何其它语义元素可用时才使用 (比如  或 ) 。&rdquo;) | 代表一个通用的容器 |
+        </div>
+          <a href="http://fanison.info/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="http://fanison.info/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="color-inherit dim link">
             Hugo搭建博客
             </a>
@@ -166,32 +193,25 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="http://fanison.info/posts/git%E5%85%A5%E9%97%A8%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/" class="color-inherit dim link">
-            Git入门本地仓库
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          1. 配置 git git 六行配置  git config --global user.name 你的英文名 git config --global user.email 你的邮箱 git config --global push.default simple git config --global core.quotepath false git config --global core.editor &quot;code --wait&quot; git config --global core.autocrlf input  2. 创建目录  git init 创建.git 目录 git status -sb 查看代码在缓存区状态（？未添加 ， A 已添加） -sb 显示总结和分支  3. 添加文件 git add 将文件添加到暂存区  4. 提交代码  git commit -m &quot;注释&quot; 将暂存区内容正式提交到本地仓库 git commit -v 显示差异信息和更多有意义的信息  5.
-        </div>
-          <a href="http://fanison.info/posts/git%E5%85%A5%E9%97%A8%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
+      
+      <section class="w-100">
+        <h1 class="f3">More</h1>
+        
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="http://fanison.info/posts/git%E5%85%A5%E9%97%A8%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/" class="link black dim">
+              Git入门本地仓库
+            </a>
+          </h2>
+        
+
+        
+        
+          <a href="http://fanison.info/posts/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Posts</a>
+        
+        </section>
       
 
       </div>
