@@ -6,10 +6,29 @@
     <description>Recent content on fanison的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 19 Nov 2019 20:24:05 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 21:17:16 +0800</lastBuildDate>
     
 	<atom:link href="http://fanison.info/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML常用标签</title>
+      <link>http://fanison.info/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Sun, 24 Nov 2019 21:17:16 +0800</pubDate>
+      
+      <guid>http://fanison.info/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>一. a 标签  属性 href、target、download、rel=noopener
+&amp;lt;a href=&amp;quot; &amp;quot;&amp;gt;&amp;lt;/a&amp;gt;  href的取值
+ 网址
+&amp;lt;a href=&amp;quot;https://fanison.info&amp;quot;&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;http://fanison.info&amp;quot;&amp;gt;&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;//fanison.info&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;  路径
+&amp;lt;a href=&amp;quot;./posts/index.html&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;  伪协议
+&amp;lt;a href=&amp;quot;javascript:;&amp;quot;&amp;gt;Click&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;javascript:alert(1);&amp;quot;&amp;gt;js伪代码&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;mailto:yafanison@gmail.com&amp;quot;&amp;gt;发邮件给我&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;tel:18312345678&amp;quot;&amp;gt;Call Me&amp;lt;/a&amp;gt;   id
+&amp;lt;a href=&amp;quot;#id&amp;quot;&amp;gt;Call Me&amp;lt;/a&amp;gt;  target的取值
+&amp;lt;a href=&amp;quot;http://fanison.info&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;新窗口打开&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;http://fanison.info&amp;quot; target=&amp;quot;_self&amp;quot;&amp;gt;当前页面加载&amp;lt;/a&amp;gt;  _parent: 加载响应到当前浏览上下文的父浏览上下文 _top:加载响应进入顶层浏览上下文
+ download：下载页面
+  ### 二. tabel 标签
+&amp;lt;table&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;姓名&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;性别&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;小米&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;男&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;苹果&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;女&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tbody&amp;gt; &amp;lt;tfoot&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;x&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;y&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tfoot&amp;gt; &amp;lt;/table&amp;gt;  - border-collapse 用来决定表格的边框是分开的还是合并的。在分隔模式下，相邻的单元格都拥有独立的边框。在合并模式下，相邻单元格共享边框。 - border-spacing 属性指定相邻单元格边框之间的距离</description>
+    </item>
     
     <item>
       <title>HTML入门笔记1</title>
