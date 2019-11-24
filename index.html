@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://fanison.info/" />
 
-<meta property="og:updated_time" content="2019-11-24T21:17:16+08:00" />
+<meta property="og:updated_time" content="2019-11-24T21:27:10+08:00" />
 <meta itemprop="name" content="fanison的博客">
 <meta itemprop="description" content="">
 
@@ -123,6 +123,37 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="http://fanison.info/posts/css%E5%9F%BA%E7%A1%80/" class="color-inherit dim link">
+            Css基础
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          一、语法  样式语法
+选择器 { 属性名: 属性值; /*注释*/ }  at语法
+@charset &quot;UTF-8&quot;; @import url(style.css); @media (min-width: 100px) and (max-width: 200px) { 语法一 }  注意事项： @charset必须放在第一行
+ at语法必须以分号;结尾
+ 所有符号都是英文符号，区分大小写
+  二、css调试  使用vscode看颜色 使用WebStorm看颜色 使用开发者工具看警告 border调试法:
+- 怀疑某元素有问题就给其加border - border没出现？说明选择器错了或者语法错了 - border出现？看看边界是否符合预期 - bug解决后把border删掉  Example: 段落p背景颜色不显示，使用border调试
+&lt;style&gt; p{ background:black color:red; } &lt;/style&gt; &lt;p&gt;你好&lt;/p&gt;  三、资料查找 Google 关键字 MDN flex mdn  CSS tricks flex css tricks
+        </div>
+          <a href="http://fanison.info/posts/css%E5%9F%BA%E7%A1%80/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="http://fanison.info/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="color-inherit dim link">
             HTML常用标签
             </a>
@@ -175,38 +206,18 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="http://fanison.info/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="color-inherit dim link">
-            Hugo搭建博客
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          hugo官网搭建过程
-1. 安装hugo 2. Create a New Site hugo new site yafanisonya.io-creator  3. Add a Theme  cd yafanisonya.io-creator/ git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml  4. Add Some Content  hugo new posts/my-first-post.md  将draft值改为false，否则为草稿状态
-5. Start the Hugo server  hugo server -D  6. Customize the Theme 7. Build static pages  hugo -D  8. 本地推送至github 在/d/github/yafanisonya.io-creator中创建.gitignore文件，将/public写入，使得public自成仓库
-        </div>
-          <a href="http://fanison.info/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="http://fanison.info/posts/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="link black dim">
+              Hugo搭建博客
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="http://fanison.info/posts/git%E5%85%A5%E9%97%A8%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/" class="link black dim">

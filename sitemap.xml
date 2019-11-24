@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://fanison.info/</loc>
-    <lastmod>2019-11-24T21:17:16+08:00</lastmod>
+    <loc>http://fanison.info/posts/css%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2019-11-24T21:27:10+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fanison.info/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2019-11-24T21:17:16+08:00</lastmod>
+    <loc>http://fanison.info/</loc>
+    <lastmod>2019-11-24T21:27:10+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://fanison.info/posts/</loc>
+    <lastmod>2019-11-24T21:27:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fanison.info/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</loc>
     <lastmod>2019-11-24T21:17:16+08:00</lastmod>
   </url>
   

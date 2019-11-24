@@ -6,10 +6,26 @@
     <description>Recent content in Posts on fanison的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 24 Nov 2019 21:17:16 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Nov 2019 21:27:10 +0800</lastBuildDate>
     
 	<atom:link href="http://fanison.info/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Css基础</title>
+      <link>http://fanison.info/posts/css%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Sun, 24 Nov 2019 21:27:10 +0800</pubDate>
+      
+      <guid>http://fanison.info/posts/css%E5%9F%BA%E7%A1%80/</guid>
+      <description>一、语法  样式语法
+选择器 { 属性名: 属性值; /*注释*/ }  at语法
+@charset &amp;quot;UTF-8&amp;quot;; @import url(style.css); @media (min-width: 100px) and (max-width: 200px) { 语法一 }  注意事项： @charset必须放在第一行
+ at语法必须以分号;结尾
+ 所有符号都是英文符号，区分大小写
+  二、css调试  使用vscode看颜色 使用WebStorm看颜色 使用开发者工具看警告 border调试法:
+- 怀疑某元素有问题就给其加border - border没出现？说明选择器错了或者语法错了 - border出现？看看边界是否符合预期 - bug解决后把border删掉  Example: 段落p背景颜色不显示，使用border调试
+&amp;lt;style&amp;gt; p{ background:black color:red; } &amp;lt;/style&amp;gt; &amp;lt;p&amp;gt;你好&amp;lt;/p&amp;gt;  三、资料查找 Google 关键字 MDN flex mdn  CSS tricks flex css tricks</description>
+    </item>
     
     <item>
       <title>HTML常用标签</title>

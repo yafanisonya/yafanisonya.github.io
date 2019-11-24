@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>fanison的博客  | Css基础</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.59.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Css基础" />
+<meta property="og:description" content="一、语法  样式语法
+选择器 { 属性名: 属性值; /*注释*/ }  at语法
+@charset &quot;UTF-8&quot;; @import url(style.css); @media (min-width: 100px) and (max-width: 200px) { 语法一 }  注意事项： @charset必须放在第一行
+ at语法必须以分号;结尾
+ 所有符号都是英文符号，区分大小写
+  二、css调试  使用vscode看颜色 使用WebStorm看颜色 使用开发者工具看警告 border调试法:
+- 怀疑某元素有问题就给其加border - border没出现？说明选择器错了或者语法错了 - border出现？看看边界是否符合预期 - bug解决后把border删掉  Example: 段落p背景颜色不显示，使用border调试
+&lt;style&gt; p{ background:black color:red; } &lt;/style&gt; &lt;p&gt;你好&lt;/p&gt;  三、资料查找 Google 关键字 MDN flex mdn  CSS tricks flex css tricks" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://fanison.info/posts/css%E5%9F%BA%E7%A1%80/" />
+<meta property="article:published_time" content="2019-11-24T21:27:10+08:00" />
+<meta property="article:modified_time" content="2019-11-24T21:27:10+08:00" />
+<meta itemprop="name" content="Css基础">
+<meta itemprop="description" content="一、语法  样式语法
+选择器 { 属性名: 属性值; /*注释*/ }  at语法
+@charset &quot;UTF-8&quot;; @import url(style.css); @media (min-width: 100px) and (max-width: 200px) { 语法一 }  注意事项： @charset必须放在第一行
+ at语法必须以分号;结尾
+ 所有符号都是英文符号，区分大小写
+  二、css调试  使用vscode看颜色 使用WebStorm看颜色 使用开发者工具看警告 border调试法:
+- 怀疑某元素有问题就给其加border - border没出现？说明选择器错了或者语法错了 - border出现？看看边界是否符合预期 - bug解决后把border删掉  Example: 段落p背景颜色不显示，使用border调试
+&lt;style&gt; p{ background:black color:red; } &lt;/style&gt; &lt;p&gt;你好&lt;/p&gt;  三、资料查找 Google 关键字 MDN flex mdn  CSS tricks flex css tricks">
+
+
+<meta itemprop="datePublished" content="2019-11-24T21:27:10&#43;08:00" />
+<meta itemprop="dateModified" content="2019-11-24T21:27:10&#43;08:00" />
+<meta itemprop="wordCount" content="290">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Css基础"/>
+<meta name="twitter:description" content="一、语法  样式语法
+选择器 { 属性名: 属性值; /*注释*/ }  at语法
+@charset &quot;UTF-8&quot;; @import url(style.css); @media (min-width: 100px) and (max-width: 200px) { 语法一 }  注意事项： @charset必须放在第一行
+ at语法必须以分号;结尾
+ 所有符号都是英文符号，区分大小写
+  二、css调试  使用vscode看颜色 使用WebStorm看颜色 使用开发者工具看警告 border调试法:
+- 怀疑某元素有问题就给其加border - border没出现？说明选择器错了或者语法错了 - border出现？看看边界是否符合预期 - bug解决后把border删掉  Example: 段落p背景颜色不显示，使用border调试
+&lt;style&gt; p{ background:black color:red; } &lt;/style&gt; &lt;p&gt;你好&lt;/p&gt;  三、资料查找 Google 关键字 MDN flex mdn  CSS tricks flex css tricks"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://fanison.info/" class="f3 fw2 hover-white no-underline white-90 dib">
+      fanison的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Css基础</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-11-24T21:27:10&#43;08:00">November 24, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h3 id="一-语法">一、语法</h3>
+
+<ol>
+<li><p>样式语法</p>
+
+<pre><code>选择器 {
+属性名:  属性值;
+/*注释*/
+}
+</code></pre></li>
+
+<li><p>at语法</p>
+
+<pre><code>@charset &quot;UTF-8&quot;;
+@import url(style.css);
+@media (min-width: 100px) and (max-width: 200px) {
+语法一
+}
+</code></pre>
+
+<h4 id="注意事项">注意事项：</h4></li>
+
+<li><p>@charset必须放在第一行</p></li>
+
+<li><p>at语法必须以分号;结尾</p></li>
+
+<li><p>所有符号都是英文符号，区分大小写</p></li>
+</ol>
+
+<h3 id="二-css调试">二、css调试</h3>
+
+<ol>
+<li>使用vscode看颜色</li>
+<li>使用WebStorm看颜色</li>
+<li>使用开发者工具看警告</li>
+
+<li><p>border调试法:</p>
+
+<pre><code>- 怀疑某元素有问题就给其加border
+- border没出现？说明选择器错了或者语法错了
+- border出现？看看边界是否符合预期
+- bug解决后把border删掉
+</code></pre>
+
+<h5 id="example">Example:</h5>
+
+<p><code>段落p背景颜色不显示，使用border调试</code></p>
+
+<pre><code>&lt;style&gt;
+p{ 
+background:black
+color:red;  
+}
+&lt;/style&gt;
+&lt;p&gt;你好&lt;/p&gt;
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-061e3f88216f1e57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<img src="https://upload-images.jianshu.io/upload_images/16155751-8735d36232b2aa98.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<img src="https://upload-images.jianshu.io/upload_images/16155751-9f7ff67bfd2f2a63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p>
+
+<h3 id="三-资料查找">三、资料查找</h3></li>
+
+<li><p>Google 关键字 MDN    <code>flex mdn</code>
+<img src="https://upload-images.jianshu.io/upload_images/16155751-d95f83b4249314c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p></li>
+
+<li><p>CSS tricks  <code>flex css tricks</code></p></li>
+
+<li><p>张鑫旭的博客  <code>flex 张鑫旭</code></p></li>
+
+<li><p><a href="https://www.freepik.com/search?query=web&amp;type=psd">PSD素材</a></p></li>
+
+<li><p><a href="https://dribbble.com/">效果图</a></p></li>
+</ol>
+
+<h3 id="四-文档流-文档内元素的流动方向">四、文档流：文档内元素的流动方向</h3>
+
+<ul>
+<li><p>流动方向
+inline元素从左到右，到达最右边才会换行
+block元素从上到下，每一个都另起一行
+inline-block元素也是从左到右</p>
+
+<pre><code>&lt;span&gt;这是第1个span&lt;/span&gt;
+&lt;span&gt;这是第2个span&lt;/span&gt;
+&lt;span&gt;这是第3个span&lt;/span&gt;
+&lt;span&gt;这是第4个span&lt;/span&gt;
+&lt;span&gt;这是第5个span&lt;/span&gt;
+&lt;div&gt;这是第1个div&lt;/div&gt;
+&lt;div&gt;这是第2个div&lt;/div&gt;
+&lt;div&gt;这是第3个div&lt;/div&gt;
+&lt;div&gt;这是第4个div&lt;/div&gt;
+&lt;div&gt;这是第5个div&lt;/div&gt;
+&lt;span class=&quot;ib&quot;&gt;这是第1个inline-block元素&lt;/span&gt;
+&lt;span class=&quot;ib&quot;&gt;这是第2个inline-block元素&lt;/span&gt;
+&lt;span class=&quot;ib&quot;&gt;这是第3个inline-block元素&lt;/span&gt;
+&lt;span class=&quot;ib&quot;&gt;这是第4个inline-block元素&lt;/span&gt;
+&lt;span class=&quot;ib&quot;&gt;这是第5个inline-block元素&lt;/span&gt;
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-4ce28c9469dfca1b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p></li>
+
+<li><p>宽度
+inline宽度为内部inline元素的和，不能用width指定
+block默认自动计算宽度，可用width指定
+inline-block结合前两者特点，可用width</p>
+
+<pre><code>&lt;span&gt;这是第1个span&lt;/span&gt;
+&lt;div&gt;这是第1个div&lt;/div&gt;
+&lt;span class=&quot;ib&quot;&gt;这是第1个inline-block元素&lt;/span&gt;
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-9d3a9cd3a7a902b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p></li>
+
+<li><p>高度
+inline高度由line-height间接确定，与height无关
+block高度由内部文档流元素决定，可以设置height
+inline-block跟block相似，可以设置height</p></li>
+</ul>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-5f614a0dc2b0fed0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="block、inline-block" />
+<img src="https://upload-images.jianshu.io/upload_images/16155751-8cb9382d1b4379cc.gif?imageMogr2/auto-orient/strip" alt="inline" /></p>
+
+<pre><code>  &lt;span&gt;第1个span元素&lt;/span&gt;
+  &lt;div style=&quot;width:10em;&quot;&gt;
+    第1个div元素第1个div元素第1个div元素第1个div元素
+    &lt;div style=&quot;position: absolute; background:green;&quot;&gt;额外的Div&lt;/div&gt;
+    其他文字其他文字其他文其他文字其他文字
+  &lt;/div&gt;
+  &lt;span class=&quot;ib&quot; style=&quot;width: 400px;&quot;&gt;
+    第1个inline-block元素第1个inline-block元素第1个inline-block元素第1个inline-block元素第1个inline-block元素第1个inline-block元素第1个inline-block元素第1个inline-block元素第1个inline-block元素
+    &lt;div&gt;block&lt;/div&gt;
+    &lt;span&gt;span&lt;/span&gt;
+  &lt;/span&gt;
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-00339394a8db36a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="复杂情况" /></p>
+
+<h3 id="五-脱离文档流">五、脱离文档流</h3>
+
+<ul>
+<li>float</li>
+
+<li><p>position:absolute/fixed</p>
+
+<pre><code>&lt;div class=&quot;div1&quot;&gt;
+&lt;div class=&quot;div2&quot;&gt;
+&lt;span&gt;span元素&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-dfd163339af65b75.gif?imageMogr2/auto-orient/strip" alt="" /></p></li>
+</ul>
+
+<h3 id="六-overflow溢出">六、overflow溢出</h3>
+
+<ul>
+<li>当内容的宽度或高度大于容器，会溢出，使用overflow设置是否显示滚动条</li>
+<li>overflow: visible;  直接显示溢出部分</li>
+<li>overflow: hidden; 直接隐藏溢出部分</li>
+<li>overflow: auto;     灵活设置滚动条</li>
+
+<li><p>overflow: scroll;    永远显示滚动条</p>
+
+<pre><code>&lt;div class=&quot;div1&quot;&gt;
+主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容主要内容
+&lt;div class=&quot;div2&quot;&gt;hi&lt;/div&gt;
+&lt;span&gt;Hello&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-290c7be7a010b3ea.gif?imageMogr2/auto-orient/strip" alt="" /></p></li>
+</ul>
+
+<h3 id="七-盒模型">七、盒模型</h3>
+
+<ul>
+<li>content-box(默认)</li>
+
+<li><p>border-box</p>
+
+<pre><code>&lt;div class=&quot;content-box&quot;&gt;content box&lt;/div&gt;
+&lt;div class=&quot;border-box&quot;&gt;border box&lt;/div&gt;
+</code></pre>
+
+<pre><code>.content-box{
+width: 100px;  
+margin: 25px;
+padding:15px;
+box-sizing: content-box;
+border:5px solid red;
+}
+.border-box{
+width: 100px;
+margin: 25px;
+padding:15px;
+box-sizing: border-box; 
+border:5px solid green;
+}
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-0bff577beecee907.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" />
+<img src="https://upload-images.jianshu.io/upload_images/16155751-d5f2d5bdb5820f3f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="" /></p></li>
+
+<li><p>区别
+content-box 的 width 等于 <code>内容宽度</code>
+border-box 的 width 等于 <code>内容宽度 + padding + border</code></p></li>
+</ul>
+
+<h3 id="八-margin合并">八、margin合并</h3>
+
+<ul>
+<li><p>相邻元素合并</p>
+
+<pre><code>&lt;h1&gt;好好学习&lt;/h1&gt;
+&lt;h2&gt;天天向上&lt;/h2&gt;
+</code></pre>
+
+<pre><code>body{
+border: 1px solid black;
+}
+h1{
+margin:20px 0;
+border:1px solid red;
+}
+h2{
+margin:30px 0;
+border:1px solid green;
+}
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-229f9d2c8cf4eb7b.gif?imageMogr2/auto-orient/strip" alt="" />
+注：<h1> 的<code>margin-bottom</code>与 <h2> 的<code>margin-top</code>合并</p></li>
+
+<li><p>父子元素合并</p>
+
+<pre><code>&lt;div class=&quot;parent&quot;&gt;
+&lt;div class=&quot;child&quot;&gt;子元素&lt;/div&gt;
+&lt;div class=&quot;child&quot;&gt;子元素&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code>body{
+border:1px solid black;
+}
+.parent{
+margin:15px;
+background:rgba(255,0,0,0.5);
+}
+.child{
+margin:30px;
+border:2px solid green;
+}
+</code></pre>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-01ac60aabde765f8.gif?imageMogr2/auto-orient/strip" alt="" /></p></li>
+
+<li><p>阻止合并</p>
+
+<h5 id="父子合并用-padding-border-overflow-hidden-挡住">父子合并用<code>padding</code>、<code>border</code>、<code>overflow:hidden</code>挡住</h5>
+
+<p><img src="https://upload-images.jianshu.io/upload_images/16155751-1dee7ecbe4ab0f59.gif?imageMogr2/auto-orient/strip" alt="" /></p></li>
+</ul>
+
+<h3 id="九-基本单位">九、基本单位</h3>
+
+<ul>
+<li>长度单位
+px 像素
+em 1em = 默认字体大小的倍数(比如不设置时是字体是20px，那2em 就是40px)
+rem 1rem = 根元素(html 节点)字体大小的倍数</li>
+
+<li><p>颜色
+颜色关键字、十六进制值、RGB、HSL、RGBA &amp; HSLA</p>
+
+<pre><code>background-color: blue;
+background-color: #e0b0ff;
+background-color: rgb(224, 176, 255);
+background-color: hsl(276, 100%, 85%);
+background-color: rgb(224, 176, 255, .5);
+background-color: hsla(240, 100%, 50%, 0.5);
+</code></pre></li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://fanison.info/" >
+    &copy; 2019 fanison的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
